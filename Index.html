@@ -190,27 +190,5 @@
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
-    <script>
-    function closeSlideBox() {
-      var slidingBox = document.getElementById("sliding-box");
-      slidingBox.style.transform = "translateY(100%)"; // Slide out the box
-      slidingBox.addEventListener("transitionend", function() {
-        // Once transition is complete, hide the box
-        slidingBox.style.display = "none";
-      }, { once: true });
-    }
-    
-    // Function to handle scrolling behavior and make the box follow the user
-    
-    function slideInAfterDelay() {
-      var slidingBox = document.getElementById("sliding-box");
-      setTimeout(function() {
-        slidingBox.style.right = "20px"; // Slide in the box
-      }, 5000); // 5 seconds delay
-    }
-    
-    // Call the function to slide in the box after 5 seconds
-    slideInAfterDelay();</script>
   </body>
 </html>
